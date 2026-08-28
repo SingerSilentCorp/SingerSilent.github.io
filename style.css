@@ -4,10 +4,39 @@ body {
     overflow: hidden;
 }
 
+
+/* VIDEO DE FONDO */
+
 video {
     position: fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+
+/* PANELES */
+
+.panel {
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 28%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* PANEL IZQUIERDO */
+
+.left-panel {
+    left: 2%;
+}
+
+
+/* PANEL DERECHO */
+
+.right-panel {
+    right: 2%;
 }
