@@ -4,9 +4,6 @@ body {
     overflow: hidden;
 }
 
-
-/* VIDEO DE FONDO */
-
 video {
     position: fixed;
     width: 100%;
@@ -14,9 +11,6 @@ video {
     object-fit: cover;
     z-index: -1;
 }
-
-
-/* PANELES */
 
 .panel {
     position: absolute;
@@ -28,14 +22,9 @@ video {
 }
 
 
-/* PANEL IZQUIERDO */
-
 .left-panel {
     left: 2%;
 }
-
-
-/* PANEL DERECHO */
 
 .right-panel {
     right: 2%;
