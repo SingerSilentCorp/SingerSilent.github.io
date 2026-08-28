@@ -31,3 +31,49 @@ video {
 .right-panel {
     right: 2%;
 }
+
+.language-box {
+    width: 80%;
+    margin: 5% auto 0 auto;
+
+    padding: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.language-box button {
+    background: none;
+    border: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.profile {
+    text-align: center;
+
+    margin-top: 30%;
+}
+
+.profile h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.profile button {
+    display: block;
+
+    width: 70%;
+
+    margin: 20px auto;
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
