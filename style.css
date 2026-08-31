@@ -66,13 +66,10 @@ video {
 
 .profile button {
     display: block;
-
+    
     width: 70%;
-
     margin: 20px auto;
-
     padding: 15px;
-
     font-size: 20px;
 
     cursor: pointer;
