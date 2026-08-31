@@ -30,6 +30,13 @@ video {
 
 .right-panel {
     right: 2%;
+    text-align: center;
+}
+
+.right-panel h2{
+    color: white;
+    front-size: 32px;
+    margin-top: 8%;
 }
 
 .language-box {
@@ -73,4 +80,28 @@ video {
     font-size: 20px;
 
     cursor: pointer;
+}
+
+.project {
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.projects {
+    width: 90%;
+    margin: 5% auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
 }
