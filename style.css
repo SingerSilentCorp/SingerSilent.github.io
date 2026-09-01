@@ -51,11 +51,16 @@ video {
     justify-content: space-around;
 }
 
+.language-box img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .language-box button {
     background: none;
     border: none;
-
-    font-size: 30px;
+    padding: 5px;
 
     cursor: pointer;
 }
