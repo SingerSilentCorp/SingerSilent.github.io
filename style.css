@@ -113,6 +113,7 @@ video {
     color: white;
     font-size: 32px;
     margin: 10px;
+    margin-button: 10px;
 }
 
 .profile button {
