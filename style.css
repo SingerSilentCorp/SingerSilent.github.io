@@ -71,6 +71,23 @@ video {
     margin-top: 30%;
 }
 
+.profile a {
+    display: block;
+
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    
+}
+
 .profile h1 {
     color: white;
     font-size: 40px;
@@ -92,23 +109,6 @@ video {
     aspect-ratio: 1/1;
 
     overflow: hidden;
-}
-
-.project a {
-    display: block;
-
-    width: 70%;
-    margin: 20px auto;
-    padding: 15px;
-
-    font-size: 20px;
-
-    cursor: pointer;
-
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    
 }
 
 .project img {
