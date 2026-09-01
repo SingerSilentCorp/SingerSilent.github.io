@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.panel {
+    position: absolute;
+    top: 2%;
+    height: 96%;
+    width: 30%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%),
+                        linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%),
+                linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+
+    mask-composite: intersect;
+
+    z-index: 1;
+}
+
+
+.left-panel {
+    left: 0.5%;
+}
+
+.right-panel {
+    right: 0.5%;
+    text-align: center;
+}
+
+.right-panel h2{
+    color: white;
+    font-size: 32px;
+    margin-top: 8%;
+}
+
+.language-box {
+    width: 30%;
+    margin: 15% auto 0 auto;
+
+    padding: 8px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.language-box button.active {
+    background-color: rgba(46, 204, 113, 0.4);
+    border: 2px solid #2ecc71;
+    border-radius: 50%;
+}
+
+.language-box img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.language-box button:hover img{
+    transform: scale(1.1);
+}
+
+.language-box button {
+    background: none;
+    border: none;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 13%;
+}
+
+.profile a {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+    
+    margin: 40px 0 0 0;
+    padding: 15px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+
+    text-decoration: none;   
+}
+
+.profile a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.name-box {
+    width: 90%;
+
+    margin: 0 auto;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    border-top: 2px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.profile h1 {
+    color: white;
+    font-size: 32px;
+    margin: 10px;
+}
+
+.profile button {
+    display: block;
+    
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.project {
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    overflow: hidden;
+}
+
+.project img {
+    width: 95%;
+    height: 75%;
+
+    object-fit: contain;
+}
+
+.projects {
+    width: 90%;
+    margin: 5% auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}

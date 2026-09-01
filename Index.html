@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop>
+        <source src="portfolio.mp4" type="video/mp4">
+    </video>
+
+    <div class="panel left-panel">
+
+        <div class="language-box">
+
+            <button id="btn-en" class="active" type="button" onclick="changeLanguage('en')">
+                <img src="assets/US_Icon.png" alt="EN">
+            </button>
+            <button id="btn-es" type="button" onclick="changeLanguage('es')">
+                <img src="assets/PE_Icon.png" alt="ES">
+            </button>
+
+        </div>
+
+
+        <div class="profile">
+            <div class ="name-box">
+                <h1>Sebastian Antonio</br>Gonzalez Cavero</h1>
+            </div>
+
+            <a id="portfolio-link" href="https://drive.google.com/file/d/1CPgcAaWwVQ0YiDV12utqURiR6cVfmlwm/view?usp=sharing"> PORTFOLIO </a>
+            <a id="cv-link" href="https://drive.google.com/file/d/169g4Sw0JaJLH3w_2KZEJVOav8X-99-_J/view?usp=sharing"> CV/RESUME </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="panel right-panel">
+
+        <h2 class ="name-box" id="projects-title"> PROJECTS </h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <img src="assets/project1.png" alt="Proyecto 1">
+            </div>
+
+            <div class="project">
+                <img src="assets/project2.png" alt="Proyecto 2">
+            </div>
+
+            <div class="project">
+                <img src="assets/project3.png" alt="Proyecto 3">
+            </div>
+
+            <div class="project">
+                <img src="assets/project4.png" alt="Proyecto 4">
+            </div>
+
+            <div class="project">
+                <img src="assets/project5.png" alt="Proyecto 5">
+            </div>
+
+            <div class="project">
+                <img src="assets/project6.png" alt="Proyecto 6">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const translations = {
+            es: {
+                portfolioText: "PORTAFOLIO",
+                portfolioUrl: "https://drive.google.com/file/d/14GvM-ezHh20Eb3maSHTElvmpM20ZgPnU/view?usp=sharing",
+                cvText: "CV/RESUMEN",
+                cvUrl: "https://drive.google.com/file/d/1wU9GzYrblyk3pgBu_utVgC7eP0FAqBSm/view?usp=sharing",
+                projectsTitle: "PROYECTOS"
+            },
+            en:{
+                portfolioText: "PORTFOLIO",
+                portfolioUrl: "https://drive.google.com/file/d/1CPgcAaWwVQ0YiDV12utqURiR6cVfmlwm/view?usp=sharing",
+                cvText: "CV/RESUME",
+                cvUrl: "https://drive.google.com/file/d/169g4Sw0JaJLH3w_2KZEJVOav8X-99-_J/view?usp=sharing",
+                projectsTitle: "PROJECTS"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById('portfolio-link').textContent = translations[lang].portfolioText;
+            document.getElementById('cv-link').textContent = translations[lang].cvText;
+            document.getElementById('projects-title').textContent = translations[lang].projectsTitle;
+
+            document.getElementById('portfolio-link').href = translations[lang].portfolioUrl;
+            document.getElementById('cv-link').href = translations[lang].cvUrl;
+
+            document.documentElement.lang = lang;
+
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+        }
+    </script>
+
+</body>
+
+</html>
