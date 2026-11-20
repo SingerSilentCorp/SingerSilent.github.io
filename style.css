@@ -4,12 +4,26 @@ body {
     overflow: hidden;
 }
 
-video {
+.background-video {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.background-video iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-width: 177.77vh;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
 }
 
 .panel {
